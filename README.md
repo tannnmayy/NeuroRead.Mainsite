@@ -86,7 +86,7 @@ python -m uvicorn app.main:app --reload
 
 ### **2. Frontend Setup**
 ```bash
-cd ai-accessibility-assistant-frontend-main
+cd frontend
 npm install
 npm run dev
 ```
