@@ -1,0 +1,34 @@
+backend/venv/
+venv/
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+.env
+backend/.env
+# Python
+__pycache__/
+*.pyc
+
+# Database
+*.db
+
+# Audio generated files
+backend/static/audio/
+
+# Node
+node_modules/
+
+# API Keys & Local Environment Files
+.env
+.env.local
+.env.development
+.env.production
+.env.*
+backend/.env
+backend/.env.*
+frontend/.env
+frontend/.env.*
+ai-accessibility-assistant-frontend-main/.env
+
+
