@@ -97,3 +97,53 @@ npm run dev
 NeuroRead targets the **linguistic quality gap**. By moving away from "robotic" word-swapping and toward **natural human tone**, we provide a reading experience that is not just easier, but more enjoyable for neurodivergent minds.
 
 **"Reading, Reimagined."**
+
+
+
+🛠️ Developer Setup & Initialization
+To get NeuroRead running locally, follow these steps:
+
+1. Prerequisites
+Ensure you have the following installed:
+
+Git
+Python 3.10+
+Node.js (LTS)
+2. Clone the Repository
+bash
+git clone https://github.com/tannnmayy/NeuroRead.Mainsite.git
+cd NeuroRead.Mainsite
+3. Backend Setup (FastAPI)
+Navigate to the backend folder:
+bash
+cd backend
+Create and activate a virtual environment:
+bash
+# Windows
+python -m venv venv
+.\venv\Scripts\activate
+# macOS/Linux
+python3 -m venv venv
+source venv/bin/activate
+Install dependencies:
+bash
+pip install -r requirements.txt
+Configure Environment Variables: Create a .env file in the /backend directory:
+env
+GROQ_API_KEY=your_api_key_here
+Run the Server:
+bash
+python -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
+4. Frontend Setup (React + Vite)
+Navigate to the frontend folder:
+bash
+cd ../ai-accessibility-assistant-frontend-main
+Install packages:
+bash
+npm install
+Start the development server:
+bash
+npm run dev
+5. Access the Platform
+Frontend: http://localhost:5173
+Interactive API Docs (Swagger): http://127.0.0.1:8000/docs
